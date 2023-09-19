@@ -11,3 +11,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  margin-left: 20vw;
+  margin-top:50px;
+}
+.slider{
+  width: 20vw;
+}
+
+
+/*friend items design*/
+.friendItemHeader{
+  display: flex;
+  margin-bottom: 20px;
+}
+.friendItemHeader>img{
+  width: 70px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+.friendItemHeader>.description{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.friendItemHeader>.description>p{
+  margin: 0;
+  font-size: 18px;
+}
+.friendItemHeader>.description>p:first-child{
+  font-weight: bold;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left : auto;
+  margin-right: 0;
+  align-items: end;
+}
+.buttonContainer>button{
+  /*height: 20px;*/
+  padding: 5px 10px;
+   background-color: orange;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Form style*/
+
+.form{
+  background-color: #fcf1de;
+  padding: 15px;
+  text-align: end;
+}
+.form>div{
+  margin-bottom: 10px;
+}
+.form>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form>div>input{
+ width: 150px;
+  padding: 5px;
+  outline: none;
+  margin: 0;
+  border: none;
+  font-size: 18px;
+}
+.form>button{
+ width: 160px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: orange;
+  border-radius: 5px;
+}

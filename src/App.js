@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import FriendsList from "./components/FriendsList";
+import Button from "./components/Button";
+import Form from "./components/Form";
+import {useState} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App({initialFriends}) {
+    const [formIsOpen,setFormIsOpen] = useState(false)
+    const onFormIsOpen = ()=>{
+        setFormIsOpen(!formIsOpen)
+    }
+
+    return (
+        <div className="App">
+            <div className='slider'>
+                <FriendsList initialFriends={initialFriends}/>
+                {formIsOpen && <Form/>}
+                <div style={{marginTop:'10px'}}><Button onClick={onFormIsOpen}>{formIsOpen?'Close':'Add friend'}</Button></div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
