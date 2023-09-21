@@ -1,96 +1,147 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App{
-  margin-left: 20vw;
-  margin-top:50px;
+
+.App {
+    margin-left: 20vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.slider{
-  width: 20vw;
+
+.slider {
+    width: 20vw;
 }
 
 
 /*friend items design*/
-.friendItemHeader{
-  display: flex;
-  margin-bottom: 20px;
+.friendItemHeader {
+    display: flex;
+    margin-bottom: 20px;
 }
-.friendItemHeader>img{
-  width: 70px;
-  border: none;
-  outline: none;
-  border-radius: 50%;
+
+.friendItemHeader > img {
+    width: 70px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
 }
-.friendItemHeader>.description{
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.friendItemHeader > .description {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.friendItemHeader>.description>p{
-  margin: 0;
-  font-size: 18px;
+
+.friendItemHeader > .description > p {
+    margin: 0;
+    font-size: 18px;
 }
-.friendItemHeader>.description>p:first-child{
-  font-weight: bold;
+
+.friendItemHeader > .description > p:first-child {
+    font-weight: bold;
 }
-.buttonContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left : auto;
-  margin-right: 0;
-  align-items: end;
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: flex-end;
 }
-.buttonContainer>button{
-  /*height: 20px;*/
-  padding: 5px 10px;
-   background-color: orange;
-  border: none;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
+
+.buttonContainer > button {
+    /*height: 20px;*/
+    padding: 5px 10px;
+    background-color: orange;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /*Form style*/
 
-.form{
-  background-color: #fcf1de;
-  padding: 15px;
-  text-align: end;
-}
-.form>div{
-  margin-bottom: 10px;
-}
-.form>div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.form {
+    background-color: #fcf1de;
+    padding: 15px;
+    text-align: end;
 }
 
-.form>div>input{
- width: 150px;
-  padding: 5px;
-  outline: none;
-  margin: 0;
-  border: none;
-  font-size: 18px;
+.form > div {
+    margin-bottom: 10px;
 }
-.form>button{
- width: 160px;
-  padding: 5px;
-  border: none;
-  font-weight: bold;
-  background-color: orange;
-  border-radius: 5px;
+
+.form > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.form > div > input {
+    width: 150px;
+    padding: 5px;
+    outline: none;
+    margin: 0;
+    border: none;
+    font-size: 18px;
+}
+
+.form > button {
+    width: 160px;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/*split bill start*/
+.splitAndBillContainer {
+    margin-left: 20px;
+    background-color: #fcf1de;
+}
+
+.splitAndBill {
+    width: 25vw;
+    /*margin-left: 20px;*/
+}
+
+.splitAndBill > h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.splitAndBill > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.splitAndBill > div > input {
+    width: 100px;
+    outline: none;
+    border: none;
+}
+
+.splitAndBill > div > select {
+    width: 105px;
+    border: none;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/*split bill end*/

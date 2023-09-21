@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "./Button";
 
-function FriendItem({item}) {
+function FriendItem({item,onChangeItemId,itemId}) {
     return (
         <div className='friendItem'>
             <div className='friendItemHeader'>
@@ -12,7 +12,7 @@ function FriendItem({item}) {
                     {item.balance ===0 &&<p style={{color:"black"}}>You and {item.name} are even</p> }
                     {item.balance < 0 &&<p style={{color:"red"}}> You owe {item.name} {-item.balance}€</p>}
                 </div>
-                <Button>Select</Button>
+                <Button onClick={() => onChangeItemId(item.id)}>{itemId === item.id ?'Close':'Select'}</Button>
             </div>
         </div>
     );

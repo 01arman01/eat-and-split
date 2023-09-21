@@ -1,12 +1,14 @@
 import React from 'react';
 import FriendItem from "./FriendItem";
 
-function FriendsList({initialFriends}) {
+function FriendsList({friendsData,onChangeItemId,itemId}) {
     return (
         <div>
             {
-                initialFriends.map((item)=>{
+                friendsData.map((item)=>{
                    return( <FriendItem
+                       onChangeItemId={onChangeItemId}
+                       itemId={itemId}
                        key={item.id}
                        item={item}
                    />)
