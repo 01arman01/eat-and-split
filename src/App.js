@@ -43,7 +43,9 @@ function App({initialFriends}) {
                 <div style={{marginTop:'10px'}}><Button onClick={onFormIsOpen}>{formIsOpen?'Close':'Add friend'}</Button></div>
             </div>
             <div className='splitAndBillContainer' >
-                {itemId && <FormSplitBill/>}
+                {itemId && <FormSplitBill
+                 itemData={friendsData.slice('').filter(item=>itemId === item.id)[0]}
+                />}
             </div>
         </div>
     );
