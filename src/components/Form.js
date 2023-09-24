@@ -26,7 +26,7 @@ function Form({onAddFriends,newId}) {
             <div><label>📷 Image URL</label> <input type='text' value={url} onChange={e=>{setUrl(e.target.value)}}/></div>
             <button type='submit' >Add</button>
         </form>
-    );
+    )
 }
 
 export default Form;

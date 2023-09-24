@@ -24,7 +24,9 @@ code {
     width: 20vw;
 }
 
-
+.background{
+    background-color:#fcf1de ;
+}
 /*friend items design*/
 .friendItemHeader {
     display: flex;
